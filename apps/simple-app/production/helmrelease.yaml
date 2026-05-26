@@ -37,5 +37,5 @@ spec:
       maxReplicas: 5
       targetCPUUtilizationPercentage: 70
     env:
-      DATABASE_URL: "postgresql://app:app@postgres-rw:5432/app"
-      REDIS_URL: "redis://dragonfly:6379"
+      DATABASE_URL: "postgresql://app:app@postgres-rw.production.svc.cluster.local:5432/app?sslmode=disable"
+      REDIS_URL: "redis://dragonfly.production.svc.cluster.local:6379"
