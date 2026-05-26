@@ -53,6 +53,12 @@ clusters/
 infrastructure/
 ```
 
+## Self-healing
+
+Self-healing was validated by manually deleting the Deployment and reconciling the HelmRelease through FluxCD.
+
+![alt text](<screenshots/Screenshot 2026-05-26 at 22.50.15.png>)
+
 ## Flux status
 
 ![alt text](<screenshots/Screenshot 2026-05-26 at 22.36.40.png>)
