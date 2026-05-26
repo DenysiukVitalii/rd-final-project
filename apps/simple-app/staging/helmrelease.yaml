@@ -24,6 +24,9 @@ spec:
       className: nginx
       host: app.staging.local
       path: /
+      tls:
+        enabled: true
+        secretName: simple-app-tls
     resources: {}
     autoscaling:
       enabled: false
