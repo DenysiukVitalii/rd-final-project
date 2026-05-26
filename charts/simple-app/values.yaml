@@ -8,6 +8,9 @@ service:
   port: 80
   targetPort: 80
 ingress:
+  tls:
+    enabled: false
+    secretName: simple-app-tls
   enabled: true
   className: nginx
   host: app.local

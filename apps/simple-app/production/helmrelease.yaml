@@ -24,6 +24,9 @@ spec:
       className: nginx
       host: app.local
       path: /
+      tls:
+        enabled: true
+        secretName: simple-app-tls
     resources:
       requests:
         cpu: "100m"
