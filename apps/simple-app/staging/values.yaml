@@ -1,0 +1,21 @@
+replicaCount: 1
+
+image:
+  repository: vitaliidenysiuk97/simple-app-final
+  tag: v0.0.1
+  pullPolicy: IfNotPresent
+
+ingress:
+  enabled: true
+  className: nginx
+  host: app.staging.local
+  path: /
+
+resources: {}
+
+autoscaling:
+  enabled: false
+
+env:
+  DATABASE_URL: "postgresql://app:app@postgres-rw:5432/app"
+  REDIS_URL: "redis://dragonfly:6379"
