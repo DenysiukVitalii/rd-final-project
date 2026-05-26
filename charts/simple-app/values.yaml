@@ -20,4 +20,5 @@ autoscaling:
   targetCPUUtilizationPercentage: 70
 env:
   DATABASE_URL: ""
-  REDIS_URL: ""
+  APP_STORE: ""
+  APP_REDIS_URL: ""
