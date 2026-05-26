@@ -19,9 +19,11 @@ spec:
           ports:
             - containerPort: 80
           env:
-            - name: DATABASE_URL
+           - name: DATABASE_URL
               value: {{ .Values.env.DATABASE_URL | quote }}
-            - name: REDIS_URL
-              value: {{ .Values.env.REDIS_URL | quote }}
+            - name: APP_STORE
+              value: {{ .Values.env.APP_STORE | quote }}
+            - name: APP_REDIS_URL
+              value: {{ .Values.env.APP_REDIS_URL | quote }}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}

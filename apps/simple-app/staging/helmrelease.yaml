@@ -29,4 +29,5 @@ spec:
       enabled: false
     env:
       DATABASE_URL: "postgresql://app:app@postgres-rw.staging.svc.cluster.local:5432/app?sslmode=disable"
-      REDIS_URL: "redis://dragonfly.staging.svc.cluster.local:6379"
+      APP_STORE: "redis"
+      APP_REDIS_URL: "redis://dragonfly.staging.svc.cluster.local:6379/0"
