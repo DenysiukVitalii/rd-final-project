@@ -17,7 +17,7 @@ spec:
     replicaCount: 1
     image:
       repository: vitaliidenysiuk97/simple-app-final
-      tag: v0.0.4
+      tag: v0.0.5
       pullPolicy: IfNotPresent
     ingress:
       enabled: true
